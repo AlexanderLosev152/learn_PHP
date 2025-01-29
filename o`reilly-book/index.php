@@ -30,4 +30,26 @@ $text = "loresdfcsdgfsDgfSDgSDgfSD
 sdfsdfsdfsdfsdfsdf
 dsfsdfsdfs";
 
+
+$b = null;
 $b ? print "true" : print "false";
+
+// function longdate($timestamp)
+// {
+// 	$temp = date("l F jS Y", $timestamp);
+// 	return "Дата : $temp";
+// }
+
+function test()
+{
+	static $count = 0;
+	echo $count;
+	$count++;
+}
+
+test();
+
+echo "<br>";
+
+// $case_from = $_SERVER['HTTP_REFERER'];
+$case_from = htmlentities($_SERVER['HTTP_REFERER']);
