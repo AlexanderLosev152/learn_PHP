@@ -9,27 +9,32 @@
 
 <body>
 	<?php
-	// function recurcia($counter)
+	// $message = 'Hello, World!';
+	// $mFu = function () use ($message) {
+	// 	echo $message;
+	// };
+	// $mFu();
+	
+	// function odd(int $number)
 	// {
-	// 	if ($counter > 0) {
-	// 		echo ($counter--) . '<br>';
-	// 		recurcia($counter);
-	// 	} else
-	// 		return;
+	// 	if ($number % 2 === 0) {
+	// 		return false;
+	// 	} else {
+	// 		return true;
+	// 	}
 	// }
+	// echo odd(4);
 	
-	// recurcia(10);
-	
-	function outher()
+	function sum(...$items)
 	{
-		function inner()
-		{
-			return 'Hello';
+		$sum = 0;
+		for ($i = 0; $i < count($items); $i++) {
+			$sum += $items[$i];
 		}
+		return $sum;
 	}
-	outher();
-	echo inner();
 
+	echo sum(3, 4, 6);
 	?>
 </body>
 
