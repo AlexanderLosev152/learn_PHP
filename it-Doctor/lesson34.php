@@ -9,7 +9,14 @@
 
 <body>
 	<?php
+	$first = ['red', 'blue'];
+	$second = ['brown', 'green'];
+	// array_merge - объединяет один или более массивов
+	$con = array_merge($first, $second);
 
+	echo '<pre>';
+	print_r($con);
+	echo '</pre>';
 	?>
 </body>
 
